@@ -1,7 +1,9 @@
 Algoritmo ApRendizaje
 	Definir opcion Como Entero
+	Definir salirAplicacion, salirSubMenu0, salirSubMenu1, salirSubMenu2 como Logico
 	Escribir "Bienvenidx! vamos a aprender"
     Escribir "----------------------------------------------"
+	salirAplicacion =falso
 	Repetir
 		Escribir "Selecciona el contenido que te interese: "
 		Escribir "1. Las palabras"
@@ -19,9 +21,46 @@ Algoritmo ApRendizaje
 		
 		Segun opcion Hacer
 			1:
-				
+				salirSubMenu0=falso
+				Repetir
+						Escribir "La Ortografía y las Faltas de Ortografía"
+						Escribir "----------------------------------------"
+						Escribir "La ortografía es una forma especial de escribir las palabras de manera correcta. Cuando escribimos, usamos letras para formar palabras y oraciones. Las faltas de ortografía son cuando escribimos una palabra de manera incorrecta."
+						Escribir "1. Continuar"
+						Escribir "2. Volver atrás"
+						Escribir "3. Salir"
+						leer opcion	
+						Segun opcion Hacer
+							1:
+								salirSubMenu1 = falso
+								Repetir
+									Escribir "Ejemplos de Faltas de Ortografía:"
+									Escribir "Falta de Letras: Si decimos amigo pero escribimos amgo, olvidamos una letra y eso es una falta de ortografía."
+									Escribir "Confusión de Letras: Si decimos casa pero escribimos caza, cambiamos una letra por otra, ¡y eso también es una falta de ortografía!"
+									Escribir "Saltar Letras: Si decimos pelota pero escribimos pelta, nos saltamos una letra, ¡y eso es una falta de ortografía!"
+									Escribir "----------------------------------------"
+									Escribir "1. Volver atrás"
+									Escribir "2. Salir"
+									leer opcion
+									Segun opcion Hacer
+										1:
+											salirSubMenu1=Verdadero
+											
+										2:
+											salirAplicacion=Verdadero
+											salirSubMenu1=Verdadero
+											salirSubMenu0=Verdadero
+									FinSegun
+								Hasta Que salirSubMenu1 = verdadero
+							2:
+								salirSubMenu0=Verdadero
+							3:
+								salirAplicacion=Verdadero
+								salirSubMenu0=Verdadero
+						Fin Segun
+				Hasta que salirSubMenu0 = verdadero
 			2:
-				
+
 			3:
 				
 			4:
@@ -38,8 +77,10 @@ Algoritmo ApRendizaje
 				
 			10:
 				Escribir "Gracias por usar la aplicación. ¡Felíz aprendizaje!"
-
+				salirAplicacion = Verdadero
+				
 		FinSegun
-	Hasta Que opcion = 10
+		Escribir "Gracias por usar la aplicación. ¡Felíz aprendizaje!"	
+	Hasta Que salirAplicacion=Verdadero
 	
 FinAlgoritmo
