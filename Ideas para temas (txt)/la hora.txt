@@ -1,0 +1,16 @@
+Reloj Analógico:
+Un reloj analógico tiene manecillas que nos muestran la hora. La manecilla grande apunta a los minutos y la manecilla pequeña apunta a las horas. Para leer la hora, miramos dónde están las manecillas. Por ejemplo:
+
+Si la manecilla pequeña está en el 12 y la manecilla grande está en el 6, son las 6 en punto.
+Reloj Digital de 12 Horas:
+Un reloj digital de 12 horas nos muestra la hora con números. Los primeros números son las horas y los segundos números son los minutos. Por ejemplo:
+
+Si dice 3:45, son las 3 horas y 45 minutos.
+Reloj Digital de Formato 24 Horas:
+Un reloj digital de formato 24 horas también muestra la hora con números, pero usa números del 0 al 23 para las horas. Por ejemplo:
+
+Si dice 18:30, son las 6 y media de la tarde.
+Interpretando la Hora:
+Observa las manecillas o los números en el reloj. La manecilla grande siempre apunta a los 12 en punto cuando empieza una hora, y la manecilla pequeña señala los minutos. En los relojes digitales, mira los números de las horas y los minutos.
+
+¡Aprender a leer el tiempo en diferentes tipos de relojes es como un pequeño rompecabezas! ¡Diviértete explorando el tiempo!

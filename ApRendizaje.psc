@@ -1,7 +1,10 @@
 Algoritmo ApRendizaje
 	Definir opcion, v1, v2, resultado Como Entero
+	Definir nombre Como Caracter
 	Definir salirAplicacion, salirSubMenu0, salirSubMenu1, salirSubMenu2 como Logico
-	Escribir "Bienvenidx! vamos a aprender"
+	Escribir "Hola!, ¿tu nombre?"
+	leer nombre
+	Escribir "Bienvenidx " nombre "! vamos a aprender"
     Escribir "----------------------------------------------"
 	salirAplicacion =falso
 	Repetir
@@ -20,8 +23,7 @@ Algoritmo ApRendizaje
 		Leer opcion
 		
 		Segun opcion Hacer
-			1:
-				salirSubMenu0=falso
+			1:salirSubMenu0=falso
 				Repetir
 					Escribir "----------------------------------------"
 					Escribir "La Ortografía y las Faltas de Ortografía"
@@ -35,8 +37,7 @@ Algoritmo ApRendizaje
 					leer opcion	
 					
 					Segun opcion Hacer
-						1:
-							salirSubMenu1 = falso
+						1:salirSubMenu1 = falso
 							Repetir
 								Escribir "----------------------------------------"
 								Escribir "Ejemplos de Faltas de Ortografía:"
@@ -67,6 +68,7 @@ Algoritmo ApRendizaje
 													Escribir "¡Incorrecto! ¿Lo intentamos otra vez?"
 												3: Escribir "----------------------------------------"
 													Escribir "¡Correcto! Hola es un saludo y las ollas están en la cocina xD"
+													Escribir "¡Muy bien " nombre "!"
 													Escribir "----------------------------------------"
 													Escribir "Vuelves al menú principal... ¡para seguir aprendiendo!"
 													Escribir "----------------------------------------"
@@ -75,19 +77,15 @@ Algoritmo ApRendizaje
 													salirSubMenu0 = Verdadero	
 											FinSegun
 										Hasta Que salirSubMenu1 = Verdadero
-									2:
-										salirSubMenu1=Verdadero
+									2:salirSubMenu1=Verdadero
 								FinSegun
 							Hasta Que salirSubMenu1 = verdadero
-						2:
-							salirSubMenu0=Verdadero
-						3:
-							salirAplicacion=Verdadero
+						2:salirSubMenu0=Verdadero
+						3:salirAplicacion=Verdadero
 							salirSubMenu0=Verdadero
 					Fin Segun
 				Hasta que salirSubMenu0 = verdadero
-			2:
-				salirSubMenu0=Falso
+			2:salirSubMenu0=Falso
 				Repetir
 					Escribir "----------------------------------------"
 					Escribir "SUMA"
@@ -109,8 +107,7 @@ Algoritmo ApRendizaje
 					leer opcion
 					
 					Segun opcion Hacer
-						1:
-							salirSubMenu1=Falso
+						1:salirSubMenu1=Falso
 							Repetir
 								v1=azar(10)
 								v2=azar(20)
@@ -150,7 +147,7 @@ Algoritmo ApRendizaje
 											leer opcion 
 											Segun opcion Hacer
 												1: Escribir "----------------------------------------"
-													Escribir "¡Correcto!"
+													Escribir "¡Correcto " nombre "!"
 													Escribir "----------------------------------------"
 													Escribir "Completaste los desafíos y vuelves al menú principal... ¡para seguir aprendiendo!"
 													Escribir "----------------------------------------"
@@ -163,18 +160,14 @@ Algoritmo ApRendizaje
 													Escribir "¡Incorrecto! ¿Lo intentamos otra vez?"
 											FinSegun
 										Hasta Que salirSubMenu1 = Verdadero
-										
 								FinSegun
 							Hasta Que salirSubMenu1 = Verdadero
-						2:
-							salirSubMenu0=Verdadero
-						3:
-							salirAplicacion=Verdadero
+						2:salirSubMenu0=Verdadero
+						3:salirAplicacion=Verdadero
 							salirSubMenu0=Verdadero
 					FinSegun
 				Hasta Que salirSubMenu0=Verdadero
-			3:
-				salirSubMenu0=Falso
+			3:salirSubMenu0=Falso
 				Repetir
 					Escribir "----------------------------------------"
 					Escribir "Es importante recordar que no debemos hablar con personas que no conocemos. Los extraños son personas que no son familiares ni amigos"
@@ -223,7 +216,7 @@ Algoritmo ApRendizaje
 											leer opcion 
 											Segun opcion Hacer
 												1: Escribir "----------------------------------------"
-													Escribir "¡Correcto! Has aprendido un montón sobre seguridad"
+													Escribir "¡Correcto! " nombre " has aprendido un montón sobre seguridad :)"
 													Escribir "----------------------------------------"
 													Escribir "Vuelves al menú principal... ¡para seguir aprendiendo!"
 													Escribir "----------------------------------------"
@@ -242,8 +235,7 @@ Algoritmo ApRendizaje
 							salirSubMenu0=Verdadero
 					FinSegun
 				Hasta Que salirSubMenu0=Verdadero
-			4:
-				salirSubMenu0=Falso
+			4:salirSubMenu0=Falso
 				Repetir
 					Escribir "----------------------------------------"
 					Escribir "Un reloj analógico tiene manecillas que nos muestran la hora" 
@@ -259,8 +251,7 @@ Algoritmo ApRendizaje
 					leer opcion
 					
 					Segun opcion Hacer
-						1:
-							salirSubMenu1=Falso
+						1:salirSubMenu1=Falso
 							Repetir
 								Escribir "----------------------------------------"
 								Escribir "Un reloj digital de formato 24 horas también muestra la hora con números, pero usa números del 0 al 23 para las horas"
@@ -290,7 +281,7 @@ Algoritmo ApRendizaje
 												1: Escribir "----------------------------------------"
 													Escribir "¡Correcto! son las 3 y media de la tarde"
 													Escribir "----------------------------------------"
-													Escribir "Vuelves al menú principal... ¡para seguir aprendiendo!"
+													Escribir "Vuelves al menú principal... ¡para seguir aprendiendo " nombre "!"
 													Escribir "----------------------------------------"
 													salirSubMenu2 = Verdadero
 													salirSubMenu1 = Verdadero
@@ -305,10 +296,8 @@ Algoritmo ApRendizaje
 										
 								FinSegun
 							Hasta Que salirSubMenu1 = Verdadero
-						2:
-							salirSubMenu0=Verdadero
-						3:
-							salirAplicacion=Verdadero
+						2:salirSubMenu0=Verdadero
+						3:salirAplicacion=Verdadero
 							salirSubMenu0=Verdadero
 					FinSegun
 				Hasta Que salirSubMenu0=Verdadero
@@ -333,8 +322,7 @@ Algoritmo ApRendizaje
 					leer opcion
 					
 					Segun opcion Hacer
-						1:
-							salirSubMenu1=Falso
+						1:salirSubMenu1=Falso
 							Repetir
 								Escribir "----------------------------------------"
 								Escribir "Los residuos secos son cosas como papel, cartón y botellas"
@@ -365,7 +353,7 @@ Algoritmo ApRendizaje
 											leer opcion 
 											Segun opcion Hacer
 												1: Escribir "----------------------------------------"
-													Escribir "¡Exacto! Por y para un mundo más sano"
+													Escribir "¡Exacto " nombre "! " "Por y para un mundo más sano"
 													Escribir "----------------------------------------"
 													Escribir "Vuelves al menú principal... ¡para seguir aprendiendo!"
 													Escribir "----------------------------------------"
@@ -436,7 +424,7 @@ Algoritmo ApRendizaje
 											leer opcion 
 											Segun opcion Hacer
 												1: Escribir "----------------------------------------"
-													Escribir "¡Correcto! Has aprendido un montón sobre reglas de tránsito"
+													Escribir "¡Correcto " nombre "! has aprendido un montón sobre reglas de tránsito"
 													Escribir "----------------------------------------"
 													Escribir "Vuelves al menú principal... ¡para seguir aprendiendo!"
 													Escribir "----------------------------------------"
@@ -481,8 +469,7 @@ Algoritmo ApRendizaje
 					leer opcion
 					
 					Segun opcion Hacer
-						1:
-							salirSubMenu1=Falso
+						1:salirSubMenu1=Falso
 							Repetir
 								Escribir "----------------------------------------"
 								Escribir "PRIMAVERA: las flores crecen y el clima se pone más cálido"
@@ -527,7 +514,7 @@ Algoritmo ApRendizaje
 													Escribir "¡Si pero no! Y si te digo que... no hay sólo una respuesta correcta. ¿Lo intentamos otra vez?"
 													Escribir "----------------------------------------"
 												4: Escribir "----------------------------------------"
-													Escribir "¡Correcto! Todas son correctas. ¡Has aprendido mucho sobre el tiempo!"
+													Escribir "¡Correcto! Todas son correctas. ¡" nombre " has aprendido mucho sobre el tiempo!"
 													Escribir "----------------------------------------"
 													Escribir "Vuelves al menú principal... ¡para seguir aprendiendo!"
 													Escribir "----------------------------------------"
@@ -541,10 +528,8 @@ Algoritmo ApRendizaje
 										Escribir "----------------------------------------"
 								FinSegun
 							Hasta Que salirSubMenu1 = Verdadero
-						2:
-							salirSubMenu0=Verdadero
-						3:
-							salirAplicacion=Verdadero
+						2:salirSubMenu0=Verdadero
+						3:salirAplicacion=Verdadero
 							salirSubMenu0=Verdadero
 					FinSegun
 				Hasta Que salirSubMenu0=Verdadero
@@ -597,7 +582,7 @@ Algoritmo ApRendizaje
 											leer opcion 
 											Segun opcion Hacer
 												1: Escribir "----------------------------------------"
-													Escribir "¡Exacto! ¡El agua transforma a la tierra en barro!"
+													Escribir "¡Exacto " nombre "! ¡El agua transforma a la tierra en barro!"
 													Escribir "----------------------------------------"
 													Escribir "Vuelves al menú principal... ¡para seguir aprendiendo!"
 													Escribir "----------------------------------------"
@@ -609,13 +594,10 @@ Algoritmo ApRendizaje
 													Escribir "----------------------------------------"
 											FinSegun
 										Hasta Que salirSubMenu1 = Verdadero
-										
 								FinSegun
 							Hasta Que salirSubMenu1 = Verdadero
-						2:
-							salirSubMenu0=Verdadero
-						3:
-							salirAplicacion=Verdadero
+						2:salirSubMenu0=Verdadero
+						3:salirAplicacion=Verdadero
 							salirSubMenu0=Verdadero
 					FinSegun
 				Hasta Que salirSubMenu0=Verdadero
@@ -684,7 +666,7 @@ Algoritmo ApRendizaje
 													Escribir "¡No! No entran en los bolsillos :(. ¿Lo intentamos otra vez?"
 													Escribir "----------------------------------------"
 												4: Escribir "----------------------------------------"
-													Escribir "¡Correcto! Eran UVAS. ¡Has aprendido mucho sobre frutas y verduras!"
+													Escribir "¡Correcto! Eran UVAS. ¡" nombre " has aprendido mucho sobre frutas y verduras!"
 													Escribir "----------------------------------------"
 													Escribir "Vuelves al menú principal... ¡para seguir aprendiendo!"
 													Escribir "----------------------------------------"
@@ -698,10 +680,8 @@ Algoritmo ApRendizaje
 										Escribir "----------------------------------------"
 								FinSegun
 							Hasta Que salirSubMenu1 = Verdadero
-						2:
-							salirSubMenu0=Verdadero
-						3:
-							salirAplicacion=Verdadero
+						2:salirSubMenu0=Verdadero
+						3:salirAplicacion=Verdadero
 							salirSubMenu0=Verdadero
 					FinSegun
 				Hasta Que salirSubMenu0=Verdadero
@@ -710,10 +690,8 @@ Algoritmo ApRendizaje
 				Escribir "Gracias por usar la aplicación. ¡Felíz aprendizaje!"
 				Escribir "----------------------------------------"
 				salirAplicacion = Verdadero
-				
 		FinSegun
 		Escribir "¡No olvides seguir aprendiendo!"	
 		Escribir "----------------------------------------"
 	Hasta Que salirAplicacion=Verdadero
-	
 FinAlgoritmo
